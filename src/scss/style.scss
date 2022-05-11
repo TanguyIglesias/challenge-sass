@@ -1,36 +1,27 @@
-$gris:#6b717f;
-$lightgrey:#8C8C8C;
-$blanc:#fff;
-$black:#000;
-
-@mixin message{
-    border: 1px solid #8C8C8C;
-    padding: 16px;
-    color: #fff;
-}
+@import "partial";
 
 body {
     font: 100% "Space Mono", monospace;
     color: $gris;
     margin: 0;
-    padding: 0;
+    padding: $padding;
     background-color: $blanc;
     overflow-x: hidden;
 } 
 main{
-    padding: 0 1em;
+    padding-top: 0;
+    padding-bottom: 0;
 }
     article{
+        padding: $padding;
         display: flex;
         flex-wrap: wrap;
         & section{
             flex-grow: 1;
             flex-basis: 45%;
             border: 1px $lightgrey solid;
-            -webkit-box-shadow: 10px 10px 15px -4px $gris;
-            -moz-box-shadow: 10px 10px 15px -4px $gris;
-            box-shadow: 10px 10px 15px -4px $gris;
-            padding: 16px;
+            @include shadow;
+            padding: $padding;
             margin: 16px;
             clear: both;
             overflow: auto;
@@ -51,7 +42,7 @@ main{
             margin-bottom: 1.6em;
             max-width: 100%;
             overflow: auto;
-            padding: 1em 1.5em;
+            padding: $padding;
             display: block;
             word-wrap: break-word; 
             &.before{
@@ -64,18 +55,44 @@ main{
             }
         }
     }
-    .success{
-        @include message();
-        background-color: green;
+    h1 {
+        text-align: center;
+        color: $pink;
     }
+
+    h2{
+        color: $pink;
+    }
+
+    h3 {
+        color: $pink;
+        text-align: center;
+        font-size: 1.5em;
+        padding: $padding;
+        margin-bottom: 0px;
+    }
+
+    .success{
+        border: 1px solid #8C8C8C;
+        padding: $padding;
+        color: $blanc ;
+        background-color: $green;
+    }
+
     .error{
-        @include message();
-        background-color: red;
+        @extend .success;
+        background-color: $red;
         &:hover{
-            background-color: green;
+            background-color: $green;
         }
     }
+
     .warning{
-        @include message();
-        background-color: orange;
+        @extend .success;
+        background-color: $orange;
+    }
+    footer{
+        & h3{
+            padding: $padding*2;
+        }
     }

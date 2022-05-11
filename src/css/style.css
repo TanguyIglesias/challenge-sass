@@ -2,16 +2,18 @@ body {
   font: 100% "Space Mono", monospace;
   color: #6b717f;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   background-color: #fff;
   overflow-x: hidden;
 }
 
 main {
-  padding: 0 1em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 article {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +29,7 @@ article section {
   border: 1px #8C8C8C solid;
   -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
   box-shadow: 10px 10px 15px -4px #6b717f;
-  padding: 16px;
+  padding: 20px;
   margin: 16px;
   clear: both;
   overflow: auto;
@@ -52,7 +54,7 @@ article code {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1em 1.5em;
+  padding: 20px;
   display: block;
   word-wrap: break-word;
 }
@@ -65,17 +67,31 @@ article code.after {
   width: 40%;
 }
 
-.success {
+h1 {
+  text-align: center;
+  color: #BF4080;
+}
+
+h2 {
+  color: #BF4080;
+}
+
+h3 {
+  color: #BF4080;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.success, .warning, .error {
   border: 1px solid #8C8C8C;
-  padding: 16px;
+  padding: 20px;
   color: #fff;
   background-color: green;
 }
 
 .error {
-  border: 1px solid #8C8C8C;
-  padding: 16px;
-  color: #fff;
   background-color: red;
 }
 .error:hover {
@@ -83,8 +99,9 @@ article code.after {
 }
 
 .warning {
-  border: 1px solid #8C8C8C;
-  padding: 16px;
-  color: #fff;
   background-color: orange;
+}
+
+footer h3 {
+  padding: 40px;
 }/*# sourceMappingURL=style.css.map */

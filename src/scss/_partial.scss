@@ -1,0 +1,15 @@
+
+$gris:#6b717f;
+$lightgrey:#8C8C8C;
+$blanc:#fff;
+$black:#000;
+$green:green;
+$red: red;
+$orange: orange;
+$pink: #BF4080;
+$padding:20px;
+@mixin shadow{
+    -webkit-box-shadow: 10px 10px 15px -4px $gris;
+    -moz-box-shadow: 10px 10px 15px -4px $gris;
+    box-shadow: 10px 10px 15px -4px $gris;
+}
