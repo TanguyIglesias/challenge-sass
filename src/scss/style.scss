@@ -20,7 +20,7 @@ main{
             flex-grow: 1;
             flex-basis: 45%;
             border: 1px $lightgrey solid;
-            @include shadow;
+            @include shadow ($shadowColor);
             padding: $padding;
             margin: 16px;
             clear: both;
@@ -95,4 +95,18 @@ main{
         & h3{
             padding: $padding*2;
         }
+    }
+
+    @for $i from 1 through 6 {
+        .adv-item-#{$i}{
+            // opacity: $i * 0.1 * 3;
+            background-color:lighten($blue, $i*5%);
+            color: darken($gris, $i*5%);
+        }
+    }
+
+    li{
+        margin: 5px;
+        border-radius: 5px;
+        list-style-type:none;
     }

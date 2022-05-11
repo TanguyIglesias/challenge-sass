@@ -27,8 +27,8 @@ article section {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   border: 1px #8C8C8C solid;
-  -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
-  box-shadow: 10px 10px 15px -4px #6b717f;
+  -webkit-box-shadow: 10px 10px 15px -4px grey;
+  box-shadow: 10px 10px 15px -4px grey;
   padding: 20px;
   margin: 16px;
   clear: both;
@@ -104,4 +104,40 @@ h3 {
 
 footer h3 {
   padding: 40px;
+}
+
+.adv-item-1 {
+  background-color: #1aa3ff;
+  color: #5f6571;
+}
+
+.adv-item-2 {
+  background-color: #33adff;
+  color: #545863;
+}
+
+.adv-item-3 {
+  background-color: #4db8ff;
+  color: #484c55;
+}
+
+.adv-item-4 {
+  background-color: #66c2ff;
+  color: #3c4048;
+}
+
+.adv-item-5 {
+  background-color: #80ccff;
+  color: #31333a;
+}
+
+.adv-item-6 {
+  background-color: #99d6ff;
+  color: #25272c;
+}
+
+li {
+  margin: 5px;
+  border-radius: 5px;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

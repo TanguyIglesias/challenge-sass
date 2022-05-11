@@ -1,4 +1,4 @@
-
+$shadowColor: grey;
 $gris:#6b717f;
 $lightgrey:#8C8C8C;
 $blanc:#fff;
@@ -7,9 +7,10 @@ $green:green;
 $red: red;
 $orange: orange;
 $pink: #BF4080;
+$blue:rgb(0, 153, 255);
 $padding:20px;
-@mixin shadow{
-    -webkit-box-shadow: 10px 10px 15px -4px $gris;
-    -moz-box-shadow: 10px 10px 15px -4px $gris;
-    box-shadow: 10px 10px 15px -4px $gris;
+@mixin shadow ($shadowColor){
+    -webkit-box-shadow: 10px 10px 15px -4px $shadowColor;
+    -moz-box-shadow: 10px 10px 15px -4px $shadowColor;
+    box-shadow: 10px 10px 15px -4px $shadowColor;
 }
